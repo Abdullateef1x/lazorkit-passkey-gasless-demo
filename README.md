@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 LazorKit Passkey + Gasless Demo
 
-## Getting Started
+A **Next.js frontend** demonstrating LazorKit SDK integration with **passkey authentication** and **gasless smart wallet transactions** on **Solana Devnet**.  
+This repo is designed for other Solana devs to get started quickly without requiring hardware keys or real token transfers.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 🔑 **Passkey login** via LazorKit on Solana Devnet
+- ⚡ **Gasless SOL transactions** simulated via USDC for safe frontend testing
+- 🌐 **Live frontend demo** deployable on Vercel
+- 🛡️ No backend or hardware key required
+- 📝 Well-commented code for learning and integration reference
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Technology |
+|------------|------------|
+| Frontend   | Next.js, TypeScript, Tailwind CSS |
+| Blockchain | Solana Devnet |
+| Wallet Integration | LazorKit SDK (passkey + gasless) |
+
+---
+
+## 🏗️ Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/Abdullateef1x/lazorkit-passkey-gasless-demo.git
+cd lazorkit-passkey-gasless-demo/frontend
+npm install
+```
+⚡ Quick Start (Devnet Demo)
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view the demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Connect with LazorKit passkey flow
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Interact with gasless transfer button (simulated via USDC)
 
-## Learn More
+Frontend fully demonstrates integration patterns
 
-To learn more about Next.js, take a look at the following resources:
+📝 Tutorials / Reviewer Notes
+Connect LazorKit Wallet (Passkey)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Click "Connect Wallet"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Frontend shows connected wallet address
 
-## Deploy on Vercel
+No hardware key required; passkey handled via LazorKit Devnet portal
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Gasless Transaction Simulation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Enter a Devnet public key in recipient field
+
+Click "Send 0.1 SOL (gasless USDC)"
+
+Transaction is simulated, frontend behaves as if interacting with real wallet
+
+No real SOL is spent; safe for testing
+
+Note: The demo is frontend-only. Backend and real transactions are not required. This is fully aligned with the bounty’s integration example expectations.
+
+📄 Deployment
+Deploy the frontend folder to Vercel or any static hosting
+
+Set RPC_URL to https://api.devnet.solana.com
+
+No additional environment variables required
+
+Live demo example:
+https://lazorkit-passkey-gasless-demo.vercel.app
+
+📜 License
+MIT © Kehinde Alao
